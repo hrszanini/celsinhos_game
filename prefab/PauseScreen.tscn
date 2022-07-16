@@ -1,0 +1,48 @@
+[gd_scene format=2]
+
+[node name="PauseScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseMessage" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -27.5
+margin_top = -7.0
+margin_right = 27.5
+margin_bottom = 7.0
+text = "PARADO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerStatus" type="RichTextLabel" parent="."]
+margin_right = 110.0
+margin_bottom = 76.0
+text = "TESTE
+TESTE
+TESTE
+TESTE
+TESTE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerInventory" type="RichTextLabel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -110.0
+margin_bottom = 76.0
+text = "TESTE
+TESTE
+TESTE
+TESTE
+TESTE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
