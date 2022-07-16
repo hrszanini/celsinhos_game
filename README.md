@@ -1,12 +1,8 @@
 # Celsinho's World Project
 
-## Base 
+## Descrição
 
-RPG plataforma 2D, com atributos simples, armas e magias. Mundo semi-aberto.
-
-## Personagens
-
-Personagem genérico 
+RPG plataforma 2D, com atributos simples, armas e magias. Mundo com navegação semi-aberta. Para se jogar preferencialmente com controle.
 
 ## Status
 
@@ -25,14 +21,53 @@ Personagem genérico
 |Destreza       |Define a velocidade de movimento do personagem e o dano aplicado nos acertos de armas à distância. |
 |Inteligência   |Define a quantidade de mana do personagem e o dano aplicado nos acertos de magias.                 |
 
-## Armas
-
-As armas são subdividas em 3 tipos: corpo-a-corpo, à distância e cajados.
-
 ## Magias
+### Cone de Fogo
+### Raio
+### Vinhas
+### Negação
+
+## Armas
+As armas são subdividas em 3 tipos: 
+
+* Armas corpo-a-corpo;
+* Armas á distância;
+* Cajados.
+
+### Corpo-a-corpo
+Armas de curto alcance geral, porém com ataques sem recarga e maior área de efeito.
+
+|Arma       |Descrição                                                                                          |
+|-----------|---------------------------------------------------------------------------------------------------|
+|Espada     |Ataque padrão, com dano mediano.                                                                   |
+|Adaga      |Ataca rápido, porém com pouco dano, alcance e área.(Recebe bônus de [Destreza](#atributos)).       |
+|Machado    |Ataque mais lento que a espada, porém com maior área e dano.                                       |
+|Lança      |Ataque padrão, com menos dano, porém com maior alcance.(Arma híbrida corpo-a-corpo e a distância)  |
+
+### Distância
+Armas de longo e médio alcance, porém com tempo de recarga entre ataques.
+
+|Arma               |Descrição                                                                              |
+|-------------------|---------------------------------------------------------------------------------------|
+|Arco               |Ataque padrão, com dano e alcance mediano.                                             |
+|Besta              |Ataque rápido, porém com maior dano e tempo de recarga.                                |              
+|Faca de arremeso   |Ataque com menor alcance, porém dano aumentado.(Recebe bônus de [Força](#atributos)).  |
+|Lança              |Ataque padrão, com menos dano.(Arma híbrida corpo-a-corpo e a distância).              |
+
+### Cajado
+Armas de curto alcance, que lançam magias específicas.
+
+|Arma                   |Descrição                                      |
+|-----------------------|-----------------------------------------------|
+|Cajado Flamejante      |Lança a magia [Cone de Fogo](#cone-de-fogo)    |
+|Cajado da Tempestade   |Lança a magia [Raio](#raio)                    |
+|Cajado Natural         |Lança a magia [Vinhas](#vinhas)                |
+|Cajado da Abjuração    |Lança a magia [Negação](#negação)              |
 
 ## Mapas
 
 ### Castelo do Controle
 
 ### Floresta de Caça
+
+### Arena do Embate
