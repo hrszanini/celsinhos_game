@@ -1,11 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/HUD/PauseScreen.gd" type="Script" id=1]
 
 [node name="PauseScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource( 1 )
 
 [node name="PauseMessage" type="Label" parent="."]
 anchor_left = 0.5
@@ -24,25 +24,14 @@ __meta__ = {
 [node name="PlayerStatus" type="RichTextLabel" parent="."]
 margin_right = 110.0
 margin_bottom = 76.0
-text = "TESTE
-TESTE
-TESTE
-TESTE
-TESTE"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="PlayerInventory" type="RichTextLabel" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -110.0
-margin_bottom = 76.0
-text = "TESTE
-TESTE
-TESTE
-TESTE
-TESTE"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="ExitButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -18.0
+margin_top = -54.0
+margin_right = 17.0
+margin_bottom = -34.0
+text = "Sair"

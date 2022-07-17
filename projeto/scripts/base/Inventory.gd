@@ -1,18 +1,45 @@
-# Imports
-const Item = preload("res://scripts/base/Item.gd")
+extends Node2D
 
-var items = []
-var active_item = 0
+# Sinais
+signal inventory_changed(inventory)
 
-func add_item(new_item: Item) -> void:
-	if len(items) == 0:
-		active_item = 0
-	items.append(new_item)
+var size: int
 
-func get_active_item() -> Item:
-	if len(items) == 0:
-		return null
-	return items[active_item]
+func _init(size: int):
+	self.size = size
 
-func change_item() -> void:
-	active_item = (active_item + 1) % len(items)
+func add_item(new_item):
+	if get_child_count() >= size:
+		return
+	
+	new_item.active = get_child_count() == 0
+	add_child(new_item)
+	print("Added " + new_item.description + " Mode: " + str(new_item.mode))
+	emit_signal("inventory_changed", self)
+
+func get_items():
+	return get_children()
+
+func get_active_item():
+	for item in get_children():
+		if item.active:
+			return item
+	return null
+
+func get_active_position():
+	var active_position = 0
+	for item in get_children():
+		if item.active:
+			return active_position
+		active_position += 1
+	return -1
+
+func change_item():
+	if get_child_count() < 2:
+		return
+	
+	var pos = get_active_position()
+	get_children()[pos].active = false
+	pos = (pos + 1) % get_child_count()
+	get_children()[pos].active = true
+	emit_signal("inventory_changed", self)

@@ -1,22 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://scripts/HUD.gd" type="Script" id=2]
-[ext_resource path="res://prefab/PauseScreen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/HUD/StatusBars.gd" type="Script" id=2]
 
-[node name="HUD" type="CanvasLayer"]
-script = ExtResource( 2 )
-
-[node name="Bars" type="Control" parent="."]
+[node name="StatusBars" type="Control"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -34.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource( 2 )
 
-[node name="Health" type="TextureProgress" parent="Bars"]
+[node name="Health" type="TextureProgress" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -6.0
@@ -30,7 +24,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Stamina" type="TextureProgress" parent="Bars"]
+[node name="Stamina" type="TextureProgress" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -47,7 +41,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Mana" type="TextureProgress" parent="Bars"]
+[node name="Mana" type="TextureProgress" parent="."]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -62,6 +56,3 @@ nine_patch_stretch = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="PauseScreen" parent="." instance=ExtResource( 3 )]
-visible = false

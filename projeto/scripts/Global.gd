@@ -1,9 +1,6 @@
 extends Node
 
-var pontos = 0
-var action_1_cooldown:float = 0
-var action_2_cooldown: float = 0
-
-func add_point():
-	pontos += 1
-	print("Ponto adicionado: " + str(pontos))
+const STATUS_BASE = 5
+const MOVE_SPEED_BASE = 20
+const JUMP_FORCE_BASE = 70
+const GRAVITY = Vector2(0, 1200)

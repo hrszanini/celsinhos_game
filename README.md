@@ -36,14 +36,24 @@ Magia de suporte, que mantém o inimigo preso por um tempo determinado, consome 
 ### Negação
 Magia de suporte, que mantém o personagem imune por um tempo determinado, consome muita [Mana](#status) e não aplica dano.
 
-## Armas
+## Items
+### Consumíveis
+Items com usos limitados, que aplicam efeitos instantâneos e consomem tempo para utilização.
+
+|Item               |Descrição                                                                  |
+|-------------------|---------------------------------------------------------------------------|
+|Poção de Vida      |Poção que recupera instantaneamente uma quantidade de [Vida](#status).     |
+|Poção de Estamina  |Poção que recupera instantaneamente uma quantidade de [Estamina](#status). |
+|Poção de Mana      |Poção que recupera instantaneamente uma quantidade de [Mana](#status).     |
+
+### Armas
 As armas são subdividas em 3 tipos: 
 
-* Armas corpo-a-corpo;
-* Armas á distância;
-* Cajados.
+* [Armas corpo-a-corpo](#corpo-a-corpo);
+* [Armas á distância](#distância);
+* [Cajados](#cajado).
 
-### Corpo-a-corpo
+#### Corpo-a-corpo
 Armas de curto alcance geral, porém com ataques sem recarga e maior área de efeito.
 
 |Arma       |Descrição                                                                                          |
@@ -53,7 +63,7 @@ Armas de curto alcance geral, porém com ataques sem recarga e maior área de ef
 |Machado    |Ataque mais lento que a espada, porém com maior área e dano.                                       |
 |Lança      |Ataque padrão, com menos dano, porém com maior alcance.(Arma híbrida corpo-a-corpo e a distância)  |
 
-### Distância
+#### Distância
 Armas de longo e médio alcance, porém com tempo de recarga entre ataques.
 
 |Arma               |Descrição                                                                              |
@@ -63,7 +73,7 @@ Armas de longo e médio alcance, porém com tempo de recarga entre ataques.
 |Faca de arremeso   |Ataque com menor alcance, porém dano aumentado. (Recebe bônus de [Força](#atributos)). |
 |Lança              |Ataque padrão, com menos dano.(Arma híbrida corpo-a-corpo e a distância).              |
 
-### Cajado
+#### Cajado
 Armas de curto alcance, que lançam magias específicas.
 
 |Arma                   |Descrição                                      |
