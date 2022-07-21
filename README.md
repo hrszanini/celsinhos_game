@@ -84,16 +84,49 @@ Armas de curto alcance, que lançam magias específicas.
 |Cajado da Abjuração    |Lança a magia [Negação](#negação)              |
 
 ## Mapas
+O mapa é ramificado em 3 partes lineares, sendo cada uma composta de 3 níveis, com inimigos mais fortes a cada nível
 
 ### Castelo do Controle
+Castelo medieval, com criaturas mágicas e magos.
 
-Inimigos:
+Nivel 1: 
+* Descrição: Entrada do castelo, com passagem pelo portão e chegada na porta.
+* Inimigos: Gosma, Mago Aprendiz
+
+Nivel 2:
+* Descrição: Interior do castelo com estantes de livros, mesas e cadeiras. 
+* Inimigos: Corvo, Mago Treinado
+
+Nivel 3:
+* Descrição: Sala principal com púlpito e grimório posicionados no fim.
+* Inimigos: Mago Superior, Dazzarek(Boss)
 
 ### Floresta de Caça
+Floresta densa povoada por animais.
 
-Inimigos:
+Nivel 1: 
+* Descrição: Entrada da floresta, com poucas árvores.
+* Inimigos: Javali, Pássaro
+
+Nivel 2:
+* Descrição: Meio da floresta densa, com muitas árvores. 
+* Inimigos: Cobra, Mico
+
+Nivel 3:
+* Descrição: Clareira com cachoeira no fim.
+* Inimigos: Guepardo, Krok(Boss)
 
 ### Arena do Embate
+Nivel 1:
+* Descrição:
+* Inimigos: 
 
-Inimigos:
+Nivel 2:
+* Descrição:
+* Inimigos: 
+
+Nivel 3:
+* Descrição:
+* Inimigos: 
+
 
